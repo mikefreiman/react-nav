@@ -27,7 +27,6 @@ const Navicon = styled.div`
   width: 48px;
   height: 100%;
   background-color: transparent;
-  z-index: 1038;
   .icon-nav {
     width: 32px;
     height: auto;
@@ -41,6 +40,25 @@ const Navicon = styled.div`
     stroke-miterlimit: 4;
     stroke-dasharray: none;
     stroke-opacity: 1;
+  }
+`;
+
+const NavClose = styled.div`
+  display: block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  path {
+    fill:#787;
+    fill-opacity:1;
+    stroke:none;
+    stroke-width:1.5;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
   }
 `;
 
@@ -116,6 +134,22 @@ class ToggleNav extends Component {
               this.state.isToggleOn ? "nav--hidden" : "nav--visible"
             }
           >
+            <NavClose onClick={this.handleClick}>
+              <svg viewBox="0 0 16 16.000001">
+                <g
+                  transform="matrix(0.83805254,0,0,0.83805254,-2.0566306,0.45752735)"
+                  id="g4278">
+                  <path
+                    id="rect4136-3"
+                    d="M 4.5753784,-0.54594108 21.545941,16.424623 19.424621,18.545943 2.4540582,1.5753792 Z"
+                    />
+                  <path
+                    id="rect4136-6"
+                    d="M 2.4540581,16.424623 19.424621,-0.54594113 21.545941,1.5753793 4.5753783,18.545943 Z"
+                    />
+                </g>
+              </svg>
+            </NavClose>
             <Ul></Ul>
           </Menu>
         </Navbar>
