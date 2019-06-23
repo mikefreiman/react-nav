@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Logo from './Logo';
+import Ul from './styles/Menu';
 
 const Nav = styled.nav`
   display: flex;
@@ -115,6 +116,7 @@ class ToggleNav extends Component {
               this.state.isToggleOn ? "nav--hidden" : "nav--visible"
             }
           >
+            <Ul></Ul>
           </Menu>
         </Navbar>
       </Nav>
