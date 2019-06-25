@@ -8,7 +8,7 @@ Live Demo: [https://mikefreiman-react-nav.now.sh/](https://mikefreiman-react-nav
 ---
 
 ### Details
-This react component was built with the critical rendering path in mind. Only the transform properties are animated; and promoted with will-change.
+This react component is built with the critical rendering path in mind. Only the transform properties are animated; and promoted with will-change.
 #### More facts
 1. CSS-in-JS uses [styled-components](https://www.styled-components.com/).
 2. Inlines SVGs
